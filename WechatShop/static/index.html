@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<!--移动端配置-->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+	<!--IOS全屏设置-->
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-touch-fullscreen" content="yes"/>
+	<!--格式检测-->
+	<meta name="format-detection" content="telephone=no,email=no,address=no"/>
+	<!--web app应用下状态条（屏幕顶部条）颜色-->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+	<title>WechatShop</title>
+	<!--添加主屏设置：-->
+		<!--桌面图标设置-->
+	<!--<link rel="apple-touch-icon" href="touch-icon-iphone.png" />--><!--光感图标-->
+	<link rel="apple-touch-icon-precomposed" href="touch-icon-iphone.png" /><!--原图图标-->
+		<!--启动画面设置-->
+	<link rel="apple-touch-startup-image" href="startup.png" />
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+	
+	<script src="script/libs/jquery.js"></script>
+	<script src="script/libs/swiper.min.js"></script>
+</head>
+<body>
+<nav id="nav">
+	<ul class="navlist">
+		<li id="n_0"><a href="index.html"><span class="active"></span></a></li>
+		<li id="n_1"><a href="cart.html" ><span></span></a><div class="cartnums" style="display:none">0</div></li>
+		<li id="n_2"><a href="usercenter.html" ><span></span></a></li>
+		<li id="n_3"><a href="productlist.html" ><span></span></a></li>
+	</ul>
+</nav>
+
+<section class="indexslider">
+	<div class="swiper-container" id="topSlider">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<img src="images/sliderbanner/1.jpg"/>
+				<div class="topzhezhao">
+		        	<div class="leftslidecontent">
+		        		<p>微信价<span>500元</span></p>
+		        		<p>这里是简单地描述吧这里是简单地描述吧这里是简单地描述吧</p>
+		        	</div>
+		        	<a href="info.html">立即购买</a>
+		        </div>
+			</div>
+			<div class="swiper-slide">
+				<img src="images/sliderbanner/2.jpg"/>
+				<div class="topzhezhao">
+		        	<div class="leftslidecontent">
+		        		<p>微信价<span>600元</span></p>
+		        		<p>这里是简单地描述吧这里是简单地描述吧这里是简单地描述吧</p>
+		        	</div>
+		        	<a href="info.html">立即购买</a>
+		        </div>
+			</div>
+			<div class="swiper-slide">
+				<img src="images/sliderbanner/3.jpg"/>
+				<div class="topzhezhao">
+		        	<div class="leftslidecontent">
+		        		<p>微信价<span>50元</span></p>
+		        		<p>这里是简单地描述吧这里是简单地描述吧这里是简单地描述吧</p>
+		        	</div>
+		        	<a href="info.html">立即购买</a>
+		        </div>
+			</div>
+			<div class="swiper-slide">
+				<img src="images/sliderbanner/4.jpg"/>
+				<div class="topzhezhao">
+		        	<div class="leftslidecontent">
+		        		<p>微信价<span>1000元</span></p>
+		        		<p>这里是简单地描述吧这里是简单地描述吧这里是简单地描述吧</p>
+		        	</div>
+		        	<a href="info.html">立即购买</a>
+		        </div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="productul" id="productul">
+	<ul>
+		<li>
+			<a href="info.html">
+	            <div class="triangle-topleft"></div>
+	            <span class="shuxing" data_url="productinfo.html">专属</span>
+	            <div class="leftimages fl"><canvas data-src="images/product/product1.png" ></div>
+	            <div class="productcontent fr">
+	                <p class="ptitle pl10">我的产品</p>
+	                <p class="pdes pl10">简介这里简介这里简介这里简介这里简介这里简介这里简介这里简介介这里简介</p>
+	                <p class="pprice pl10">价格：<span class="green">￥5000</span></p>
+            	</div>
+			</a>
+		</li>
+		<li>
+			<a href="info.html">
+	            <div class="triangle-topleft rexiao"></div>
+	            <span class="shuxing" data_url="productinfo.html">热销</span>
+	            <div class="leftimages fl"><canvas data-src="images/product/product1.png" ></div>
+	            <div class="productcontent fr">
+	                <p class="ptitle pl10">我的产品</p>
+	                <p class="pdes pl10">简介这里简介这里简介这里简介这里简介这里简介这里简介这里简介介这里简介</p>
+	                <p class="pprice pl10">价格：<span class="green">￥5000</span></p>
+            	</div>
+			</a>
+		</li>
+		<li>
+			<a href="info.html">
+	            <div class="triangle-topleft xiangou"></div>
+	            <span class="shuxing" data_url="productinfo.html">限购</span>
+	            <div class="leftimages fl"><canvas data-src="images/product/product1.png" ></div>
+	            <div class="productcontent fr">
+	                <p class="ptitle pl10">我的产品</p>
+	                <p class="pdes pl10">简介这里简介这里简介这里简介这里简介这里简介这里简介这里简介介这里简介</p>
+	                <p class="pprice pl10">价格：<span class="green">￥5000</span></p>
+            	</div>
+			</a>
+		</li>
+	</ul>
+</section>
+
+
+<script src="script/swiperSlider.js"></script>
+<script src="script/loadCanvas.js"></script>
+
+</body>
+</html>

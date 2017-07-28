@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+//userlogin.html
+$topcolor:#fafafa; //sass可以定义一些常用的量到内部使用，或者设定几种theme用于切换
+$topfontsize:1.8rem;
+$index1:1;
+$index2:10;
+$index3:100;
+$index4:200;
+$index5:1000;
+$maincolor:#28c728;
+
+.u-header{box-shadow:0 1px 3px #ccc;height: 46px;text-align: center;line-height: 46px; position: relative; 
+    font-size: $topfontsize;z-index: $index4; //sass使用变量
+    @extend .jianbian;
+    .uc_return{position: relative; height: 46px; overflow: hidden;
+        .uc_return_l{position: absolute; left: 12px; height: 46px; width: 40px; background: url(../images/return.png) no-repeat left center; background-size: 13px 21px; cursor: pointer;}
+        .uc_return_c{float: left; width: 100%;}
+        .uc_return_r{position: absolute; right: 12px; height: 46px; width: 40px; line-height: 46px; font-size: 1.5rem;
+            a{display: block; height: 46px;}
+        }
+    }
+}
+.logging{
+    ul{margin: 22px 0; font-size: 1.4rem; line-height: 23px;
+        li{overflow: hidden; position: relative;
+            s{width: 24px; height: 34px; display:inline-block;margin-right: 15px; background: url(../images/head_gray.png) no-repeat 0 center; background-size: 24px auto;vertical-align: middle;}
+            input{border: none; line-height: 34px; font-size: 1.4rem;width:80%;width:calc(100% - 50px);}
+        }
+        li:nth-of-type(2){
+            s{background: url(../images/uc_logging_password.png) no-repeat center center; background-size: 18px auto;}
+        }
+        li{
+            s.warn{position: absolute; right: 12px; background: url(../images/warn.png) no-repeat 0 center; background-size: 20px 20px; margin-right: 0;}
+        }
+    }
+    .find_paw{padding-left: 10px; font-size: 1.2rem;
+        a{color: #9c9c9c;}
+    }
+    .btn_wrap{
+        .btn{display: block; line-height: 46px; background: $maincolor; border-radius: 3px; font-size: 1.6rem; text-align: center; color: #fff;width:95%;margin:10px auto;}
+    }
+    .quick_register{padding: 0 10px;
+        div{border-top: 1px solid #eee; text-align: center; padding-top: 16px;
+            a{color: $maincolor; font-size: 1.4rem;}
+        }
+    }
+}

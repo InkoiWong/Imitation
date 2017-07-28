@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-touch-fullscreen" content="yes"/>
+	<meta name="format-detection" content="telephone=no,email=no,address=no"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+	<title>WechatShop</title>
+	<link rel="apple-touch-icon-precomposed" href="touch-icon-iphone.png" />
+	<link rel="apple-touch-startup-image" href="startup.png" />
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+	<script src="script/libs/jquery.js"></script>
+	<script src="script/libs/swiper.min.js"></script>
+</head>
+<body>
+<nav id="nav">
+      <ul class="navlist">
+        <li id="n_0"><a href="index.html"><span></span></a></li>
+        <li id="n_1"><a href="cart.html" ><span></span></a><div class="cartnums" style="display:none">0</div></li>
+        <li id="n_2"><a href="usercenter.html" ><span class="active"></span></a></li>
+        <li id="n_3"><a href="productlist.html" ><span></span></a></li>
+     </ul>
+</nav>
+
+<section class="addressinfo">
+    <ul  class="addresscontent" id="address_add" >
+        <li>
+            <p><input value="" name="consignee" placeholder="填写你的真实姓名" id="consignee" class="text" type="text"></p>
+        </li>
+        <li>
+            <div id="region">
+	            <select name="sheng" id="s1"></select>
+	            <select name="shi" id="s2"></select>
+	            <select name="qu" id="s3"></select>
+            </div>
+        </li>
+        <li>
+            <p><input value="" name="address" id="address" placeholder="详细地址（不必重复填写地区）" class="text width1" type="text" /></p>
+        </li>
+        <li>
+            <p><input value="" id="phone_mob" name="phone_mob" class="text" type="number" placeholder="手机或者电话"  /></p>
+        </li>
+        <li>
+           <input class="submit_address" value="保存" type="button" />
+        </li>
+    </ul>
+
+    <ul class="op_address_list mt20" id="addresslist">
+        <li>
+	        <p><em class="name">陈某某</em>(<em class="phone">15899966666</em>)</p>
+	        <p class="all-address">广东省&nbsp;广州市&nbsp;天河区&nbsp;华南理工大学</p>
+	        <p class="new_line"><br></p>
+	        <p class="address_action">
+	            <span class="edit"><a href="#"><i class="edit_icon"></i>编辑</a></span>
+	            <span><a href="#" class="delete float_none"><i class="delete_icon"></i>删除</a></span>
+	        </p>
+        </li>
+        <li> 
+            <p><em class="name">黄某某</em>(<em class="phone">15899955555</em>)</p>
+            <p class="all-address">广东省&nbsp;广州市&nbsp;番禺区&nbsp;星海音乐学院</p>
+            <p class="new_line"><br></p>
+            <p class="address_action">
+                <span class="edit"><a href="#"><i class="edit_icon"></i>编辑</a></span>
+                <span><a href="#" class="delete float_none"><i class="delete_icon"></i>删除</a></span>
+            </p>
+        </li>      
+    </ul>
+
+ </section>
+
+<script src="script/plugs/diqu.js"></script>
+<script src="script/orderlist.js"></script>
+<script src="script/address.js"></script>
+
+</body>
+</html>
